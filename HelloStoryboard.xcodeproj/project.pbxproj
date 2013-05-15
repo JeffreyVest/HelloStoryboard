@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A228B83B17431F9F00CF2625 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A228B83A17431F9F00CF2625 /* MenuButton.m */; };
 		A25A3AB1173C7FB900119477 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25A3AAE173C7FB900119477 /* ECSlidingViewController.m */; };
 		A25A3AB2173C7FB900119477 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A25A3AB0173C7FB900119477 /* UIImage+ImageWithUIView.m */; };
 		A25A3ABB173C80E800119477 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25A3ABA173C80E800119477 /* InitialViewController.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A228B83917431F9F00CF2625 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
+		A228B83A17431F9F00CF2625 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		A25A3AAD173C7FB900119477 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
 		A25A3AAE173C7FB900119477 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		A25A3AAF173C7FB900119477 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				A25A3ABA173C80E800119477 /* InitialViewController.m */,
 				A25A3ABC173C842800119477 /* LeftMenuViewController.h */,
 				A25A3ABD173C842800119477 /* LeftMenuViewController.m */,
+				A228B83917431F9F00CF2625 /* MenuButton.h */,
+				A228B83A17431F9F00CF2625 /* MenuButton.m */,
 			);
 			path = HelloStoryboard;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				A25A3AB2173C7FB900119477 /* UIImage+ImageWithUIView.m in Sources */,
 				A25A3ABB173C80E800119477 /* InitialViewController.m in Sources */,
 				A25A3ABE173C842800119477 /* LeftMenuViewController.m in Sources */,
+				A228B83B17431F9F00CF2625 /* MenuButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

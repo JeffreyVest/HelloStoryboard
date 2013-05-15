@@ -33,13 +33,6 @@
 {
     [super viewWillAppear:animated];
     
-    self.leftMenuButton.layer.cornerRadius = 8;
-    self.leftMenuButton.layer.backgroundColor = [[UIColor
-                                                  colorWithRed:0.9f
-                                                  green:0.9f
-                                                  blue:0.9f
-                                                  alpha:1.0f] CGColor];
-    
     self.view.layer.shadowOpacity = 0.75f;
     self.view.layer.shadowRadius = 10.0f;
     self.view.layer.shadowColor = [UIColor blackColor].CGColor;

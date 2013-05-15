@@ -12,6 +12,5 @@
 
 @interface HelloViewController : UIViewController
 - (IBAction)leftMenuReveal:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *leftMenuButton;
 
 @end

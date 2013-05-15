@@ -34,39 +34,35 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEC-Pl-IXA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHB-Y5-Vwe" customClass="MenuButton">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="ZFr-jH-9NU"/>
-                                    <constraint firstAttribute="width" constant="38" id="pzG-AM-H9l"/>
+                                    <constraint firstAttribute="height" constant="29" type="user" id="0J0-Mw-Yb6"/>
+                                    <constraint firstAttribute="width" constant="27" type="user" id="DHz-2P-EKq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <state key="normal" title="...">
-                                    <color key="titleColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                                 <connections>
-                                    <action selector="leftMenuReveal:" destination="9eG-iT-xKA" eventType="touchUpInside" id="DMI-ES-u6z"/>
+                                    <outletCollection property="gestureRecognizers" destination="thr-H9-wbn" appends="YES" id="4uF-CH-y05"/>
                                 </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YHB-Y5-Vwe" firstAttribute="top" secondItem="ASU-kg-Gtr" secondAttribute="top" constant="15" type="user" id="6Ws-gz-QS6"/>
                             <constraint firstItem="0Qr-Dw-1RU" firstAttribute="centerX" secondItem="q97-Vs-Fdg" secondAttribute="centerX" type="default" id="9HM-LU-UW9"/>
-                            <constraint firstItem="ZEC-Pl-IXA" firstAttribute="top" secondItem="ASU-kg-Gtr" secondAttribute="top" constant="20" symbolic="YES" type="default" id="PFf-jG-uSj"/>
-                            <constraint firstItem="ZEC-Pl-IXA" firstAttribute="leading" secondItem="ASU-kg-Gtr" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Uxg-y2-qGE"/>
                             <constraint firstItem="q97-Vs-Fdg" firstAttribute="top" secondItem="ASU-kg-Gtr" secondAttribute="top" constant="70" type="user" id="YoH-Xu-54d"/>
                             <constraint firstItem="q97-Vs-Fdg" firstAttribute="centerX" secondItem="ASU-kg-Gtr" secondAttribute="centerX" type="default" id="jv9-0e-mUS"/>
                             <constraint firstAttribute="bottom" secondItem="0Qr-Dw-1RU" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="sUD-PA-D1K"/>
+                            <constraint firstItem="YHB-Y5-Vwe" firstAttribute="leading" secondItem="ASU-kg-Gtr" secondAttribute="leading" constant="20" symbolic="YES" type="user" id="tLY-He-ccJ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="leftMenuButton" destination="ZEC-Pl-IXA" id="QGK-Aj-5AN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlf-gE-1cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="thr-H9-wbn">
+                    <connections>
+                        <action selector="leftMenuReveal:" destination="9eG-iT-xKA" id="xlC-mx-P6w"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="504" y="-345"/>
         </scene>
@@ -164,7 +160,6 @@
             <relationships>
                 <relationship kind="action" name="backFromWazup:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="action" name="leftMenuReveal:"/>
-                <relationship kind="outlet" name="leftMenuButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="InitialViewController" superclassName="ECSlidingViewController">
@@ -172,6 +167,9 @@
         </class>
         <class className="LeftMenuViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LeftMenuViewController.h"/>
+        </class>
+        <class className="MenuButton" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuButton.h"/>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
